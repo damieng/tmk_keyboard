@@ -74,7 +74,7 @@ F_CPU = 16000000
 # Build Options
 #   comment out to disable the options.
 #
-BOOTMAGIC_ENABLE = yes	# Virtual DIP switch configuration(+1000)
+#BOOTMAGIC_ENABLE = yes	# Virtual DIP switch configuration(+1000)
 #MOUSEKEY_ENABLE = yes	# Mouse keys(+5000)
 EXTRAKEY_ENABLE = yes	# Audio control and System control(+600)
 CONSOLE_ENABLE = yes    # Console for debug
@@ -106,3 +106,6 @@ iso_150: all
 
 7bit: OPT_DEFS += -DLAYOUT_7BIT
 7bit: all
+
+damieng: OPT_DEFS += -DLAYOUT_DAMIENG
+damieng: all
