@@ -81,7 +81,7 @@ void keyboard_init(void)
 void keyboard_task(void)
 {
     static matrix_row_t matrix_prev[MATRIX_ROWS];
-    static uint8_t led_status = 0;
+    static uint8_t led_status = 128;
     matrix_row_t matrix_row = 0;
     matrix_row_t matrix_change = 0;
 
